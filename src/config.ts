@@ -1,92 +1,93 @@
+import { defineCollection, z } from 'astro:content';
+
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  name: "Jerome Lim",
+  title: "Student at Hwa Chong Institution",
+  description: "Portfolio website of Jerome Lim",
+  accentColor: "#FFEA00",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "jerome.lim1707@gmail.com",
+    linkedin: "https://www.linkedin.com/in/jerome-lim-81292a30a/",
+    github: "https://github.com/jeff-160",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    `I'm Jerome, a student who is passionate about computing. I started coding in Secondary 2 and fell in love with it ever since.
+    <br><br>
+    I'm currently interested in cybersecurity and regularly participate in CTFs. If you need a Pyjail expert hmu 🔥
+    <br><br>
+    Outside of computing, I like playing ShellShockers and listening to heavy metal!
+    <br><br>
+    Let's connect on LinkedIn!
+    `,
+  profileImage: "/images/pfp.jpeg",
+  skills: ["Python", "JavaScript", "C++"],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Pseudocode Interpreter",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "A minimal pseudocode interpreter that is compliant with the H2 Computing pseudocode standard, to help my schoolmates better familiarise themselves with the syntax",
+      link: "https://github.com/jeff-160/Pseudocode-Interpreter",
+      skills: ["Python"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "CrowJS",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "JavaScript superset that integrates C++ style macros into the language",
+      link: "https://github.com/jeff-160/CrowJS",
+      skills: ["C++"],
     },
     {
-      name: "ExtensionKit",
+      name: "TempHairline",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Search history grabber and remote shell trojan for educational purposes",
+      link: "http://github.com/jeff-160/TempHairline",
+      skills: ["Python"],
     },
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      title: "CSIT Computing Scholar",
+      company: "",
+      dateRange: "Sept 2025 - Present",
+      bullets: [],
+    },
+    {
+      title: "Sentinel Programme",
+      company: "",
+      dateRange: "March 2025 - Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Youth development programme by DIS",
+        "Trains youths in cybersecurity to aid in Singapore's digital defence"
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      title: "Product Development Consultant",
+      company: "Sabre Asia Pacific",
+      dateRange: "Nov 2024",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "3 week school attachment programme where I did full-stack dev",
+        "Developer for CSL HotelAvail and HotelDetails API tools",
       ],
     },
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
+      school: "Hwa Chong Institution",
+      degree: "",
+      dateRange: "2020 - Present",
+      achievements: [],
     },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
-    },
-  ],
+  ]
 };
+
+const blog = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    description: z.string(),
+    tags: z.array(z.string()).optional(),
+    draft: z.boolean().optional(),
+  }),
+});
+
+export const collections = { blog };
