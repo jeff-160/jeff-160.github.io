@@ -17,3 +17,8 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+.markdown-body code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
