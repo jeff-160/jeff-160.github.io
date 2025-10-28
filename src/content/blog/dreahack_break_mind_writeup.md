@@ -5,8 +5,6 @@ description: "dreamhack level 3 pyjail"
 tags: ["dreamhack", "ctf", "pyjail"]
 ---
 
-## Break Mind
-
 <img src="/blog/dreamhack_break_mind_writeup/images/chall.png" width=400>
 
 We are given a pyjail where our payload is run against an `exec()` call with no length restrictions, and a simple blacklist is also implemented.  
@@ -46,5 +44,6 @@ getattr(getattr({'x':x for x in getattr(getattr(getattr((), "\137\137\143\154\14
 ```
 
 Submitting the payload then spawns a shell which reveals the flag file in the current directory.  
+
 
 <img src="/blog/dreamhack_break_mind_writeup/images/flag.png" width=600>
