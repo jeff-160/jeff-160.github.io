@@ -42,3 +42,9 @@ html.gray {
 * {
   scrollbar-width: thin;
 }
+
+/* for blog post images */
+.markdown img {
+  margin: 1.5rem auto;
+  display: block;
+}
