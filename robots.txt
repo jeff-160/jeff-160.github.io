@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /_astro/
+Disallow: /fonts/
+
+Sitemap: https://jeff-160.github.io/sitemap-index.xml
