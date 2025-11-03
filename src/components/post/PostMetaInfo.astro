@@ -8,7 +8,7 @@ interface Props {
   class?: string
 }
 
-const { date, lastMod, words, readingMinutes, class: className } = Astro.props
+const { date, lastMod, words, class: className } = Astro.props
 ---
 
 <div class="flex flex-wrap gap-2 text-sm text-secondary" class:list={[className]}>
