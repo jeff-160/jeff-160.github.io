@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "prepare": "pnpm exec simple-git-hooks",
+    "prepare": "",
     "dev": "astro dev",
     "build": "astro check && astro build && pagefind --site dist",
     "preview": "astro preview",
