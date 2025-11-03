@@ -51,8 +51,8 @@ const getPageUrl = (page: number) => {
     {currentPage === 1 && <Hero />}
     <div class="max-w-[1100px] px-4 md:px-8 py-20 mx-auto grid lg:grid-cols-[auto_300px] gap-10">
       <div class="min-w-0">
-        <SectionBlock title="最新发布">
-          <PostList posts={data} />
+        <SectionBlock title="Latests Posts">
+          <PostList posts={data.slice(0, 3)} />
           {
             totalPage > 1 && (
               <PostPagination current={currentPage} total={totalPage} getPageUrl={getPageUrl} />
@@ -62,16 +62,13 @@ const getPageUrl = (page: number) => {
       </div>
       <div>
         <aside class="md:sticky md:top-20 space-y-10">
-          <SectionBlock title="分类">
-            <CategoryList categories={allCategories} />
-          </SectionBlock>
-          <SectionBlock title="热门标签">
+          <SectionBlock title="Popular Tags">
             <TagList tags={hotTags} />
             {
               allTags.length > hotTags.length && (
                 <div class="mt-2 text-right">
                   <a class="text-sm text-secondary hover:text-accent" href="/tags">
-                    更多标签 <i class="iconfont icon-arrow-right" />
+                    More tags <i class="iconfont icon-arrow-right" />
                   </a>
                 </div>
               )

@@ -13,7 +13,6 @@ import { Outdate } from '@/components/post/Outdate'
 import PostNav from '@/components/post/PostNav.astro'
 import { Comments } from '@/components/comment'
 import { ActionAside } from '@/components/post/ActionAside'
-import { PostCopyright } from '@/components/post/PostCopyright'
 
 export const getStaticPaths = (async () => {
   const sortedPosts = await getSortedPosts()
@@ -74,7 +73,6 @@ const lastMod = current.data.lastMod || current.data.date
           date={current.data.date}
           lastMod={current.data.lastMod}
           words={remarkPluginFrontmatter.words}
-          readingMinutes={remarkPluginFrontmatter.readingMinutes}
         />
         <PostArchiveInfo
           class="justify-center"
@@ -91,19 +89,8 @@ const lastMod = current.data.lastMod || current.data.date
         <Content />
       </MarkdownWrapper>
     </div>
-    <div class="hidden lg:block" data-pagefind-ignore>
-      <aside class="sticky top-20">
-        <SectionBlock title="目录">
-          <PostToc headings={headings} client:idle />
-          <hr class="my-2 border-primary max-w-[100px]" />
-          <ReadingProgress client:idle />
-        </SectionBlock>
-        <ActionAside client:idle />
-      </aside>
-    </div>
     <div data-pagefind-ignore>
       <section class="space-y-6">
-        <PostCopyright title={current.data.title} slug={mdSlug} lastMod={lastMod} client:visible />
         <PostNav prev={prev} next={next} />
         {current.data.comments && <Comments />}
       </section>

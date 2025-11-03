@@ -1,43 +1,37 @@
 {
   "site": {
     "url": "https://gyoza.lxchapu.com",
-    "title": "Gyoza",
-    "description": "这是一个使用 Astro 和 React 开发的博客主题。",
-    "keywords": "Gyoza,blog,Astro,theme,lxchapu,博客主题",
-    "lang": "zh-CN",
+    "title": "Jerome",
+    "description": "",
+    "keywords": "",
+    "lang": "en-EN",
     "favicon": "/favicon.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
     "name": "lxchapu",
     "twitterId": "@lxchapu",
-    "avatar": "https://s2.loli.net/2024/04/30/ozsnuS5Ihf3xMBG.webp"
+    "avatar": "https://avatars.githubusercontent.com/u/141229412?v=4"
   },
   "hero": {
-    "name": "Gyoz",
-    "bio": "A static blog template build with Astro and React.",
-    "description": "Clean, Cute, Fast.",
+    "name": "Jerome",
+    "bio": "Student at Hwa Chong Institution and CSIT computing scholar",
+    "description": "",
     "socials": [
-      {
-        "name": "Github",
-        "icon": "icon-github",
-        "url": "https://github.com/lxchapu/astro-gyoza",
-        "color": "rgb(24, 23, 23)"
-      },
-      {
-        "name": "X",
-        "icon": "icon-x",
-        "url": "https://twitter.com/lxchapu",
-        "color": "rgb(36, 46, 54)"
-      },
       {
         "name": "Email",
         "icon": "icon-mail",
-        "url": "mailto:lxchapu@outlook.com",
+        "url": "jerome.lim1707@gmail.com",
         "color": "rgb(212, 70, 56)"
+      },
+      {
+        "name": "Github",
+        "icon": "icon-github",
+        "url": "https://github.com/jeff-160",
+        "color": "rgb(24, 23, 23)"
       }
     ],
-    "yiyan": "当第一颗卫星飞向大气层外，我们便以为自己终有一日会征服宇宙。"
+    "yiyan": ""
   },
   "color": {
     "accent": [
@@ -66,29 +60,24 @@
   },
   "menus": [
     {
-      "name": "首页",
+      "name": "Home",
       "link": "/",
       "icon": "icon-pantone"
     },
     {
-      "name": "归档",
-      "link": "/archives",
+      "name": "Blog",
+      "link": "/blog",
       "icon": "icon-archive"
     },
     {
-      "name": "项目",
+      "name": "Projects",
       "link": "/projects",
       "icon": "icon-flask"
     },
     {
-      "name": "关于",
+      "name": "About",
       "link": "/about",
       "icon": "icon-ghost"
-    },
-    {
-      "name": "友链",
-      "link": "/friends",
-      "icon": "icon-hearts"
     }
   ],
   "posts": {
