@@ -48,3 +48,14 @@ html.gray {
   margin: 1.5rem auto;
   display: block;
 }
+
+pre {
+  white-space: pre-wrap !important; 
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  overflow-x: hidden !important;
+}
+
+pre code {
+  white-space: inherit !important;
+}
