@@ -1,0 +1,18 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro'
+import PostList from '@/components/post/PostList.astro'
+import { getSortedPosts } from '@/utils/content'
+import SectionBlock from '@/components/SectionBlock.astro'
+
+const posts = await getSortedPosts();
+---
+
+<PageLayout title="Blog">
+  <div class="mx-auto max-w-[800px] px-4 py-20">
+    <div class="min-w-0">
+      <SectionBlock title="">
+        <PostList posts={posts} />
+      </SectionBlock>
+    </div>
+  </div>
+</PageLayout>

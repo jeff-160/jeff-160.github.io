@@ -6,30 +6,29 @@ export function getRelativeTime(startDate: Date, endDate = new Date()) {
   }
   const diffMinutes = Math.floor(diffSeconds / 60)
   if (diffMinutes < 10) {
-    return '刚刚'
+    return 'Now'
   }
   if (diffMinutes < 60) {
-    return `${diffMinutes} 分钟前`
+    return `${diffMinutes} mins ago`
   }
   const diffHours = Math.floor(diffMinutes / 60)
   if (diffHours < 24) {
-    return `${diffHours} 小时前`
+    return `${diffHours} hours ago`
   }
   const diffDays = Math.floor(diffHours / 24)
   if (diffDays < 10) {
-    return `${diffDays} 天前`
+    return `${diffDays} days ago`
   }
   return null
 }
 
 // 获取一个格式化的日期，格式为：2024 年 1 月 1 日 星期一
 export function getFormattedDate(date: Date) {
-  const year = date.getFullYear() % 100
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'][date.getDay()]
-
-  return `${year} 年 ${month} 月 ${day} 日 ${week}`
+  return date.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  })
 }
 
 // 数字前补 0
