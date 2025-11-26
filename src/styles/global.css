@@ -54,6 +54,8 @@ pre {
   word-break: break-word !important;
   overflow-wrap: anywhere !important;
   overflow-x: hidden !important;
+  max-height: none !important;
+  overflow-y: visible !important;
 }
 
 pre code {
