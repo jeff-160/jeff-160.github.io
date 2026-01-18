@@ -1,6 +1,6 @@
 ---
 title: "SideChannel"
-date: 2025-01-18
+date: 2026-01-18
 summary: "picoctf hard rev chall"
 tags: ["picoctf", "ctf", "reverse engineering"]
 ---
