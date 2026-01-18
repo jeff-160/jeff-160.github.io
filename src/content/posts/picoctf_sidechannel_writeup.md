@@ -1,8 +1,8 @@
 ---
 title: "SideChannel"
 date: 2026-01-18
-summary: "picoctf hard rev chall"
-tags: ["picoctf", "ctf", "reverse engineering"]
+summary: "picoctf hard forensics(?) chall"
+tags: ["picoctf", "ctf", "forensics", "reverse engineering"]
 ---
 
 <img src="/blog/picoctf_sidechannel_writeup/images/chall.png" width=600>
