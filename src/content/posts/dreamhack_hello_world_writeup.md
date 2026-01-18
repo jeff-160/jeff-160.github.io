@@ -1,7 +1,7 @@
 ---
 title: "Hello World! writeup"
 date: 2025-10-22
-description: "dreamhack level 5 web chall"
+summary: "dreamhack level 5 web chall"
 tags: ["dreamhack", "ctf", "web", "python"]
 ---
 

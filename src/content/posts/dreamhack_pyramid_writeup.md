@@ -1,7 +1,7 @@
 ---
 title: "Pyramid"
 date: 2025-10-20
-description: "dreamhack level 5 web chall"
+summary: "dreamhack level 5 web chall"
 tags: ["dreamhack", "ctf", "web", "command injection"]
 ---
 

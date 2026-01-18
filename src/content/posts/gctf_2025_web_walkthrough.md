@@ -1,7 +1,7 @@
 ---
 title: "Gryphons CTF 2025 Web walkthrough"
 date: 2025-11-04
-description: "writeups for gctf 2025 web challs"
+summary: "writeups for gctf 2025 web challs"
 tags: ["gctf", "ctf", "web"]
 ---
 

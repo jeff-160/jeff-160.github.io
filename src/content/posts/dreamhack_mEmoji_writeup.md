@@ -1,7 +1,7 @@
 ---
 title: "mEmoji writeup"
 date: 2025-12-11
-description: "dreamhack level 7 web chall"
+summary: "dreamhack level 7 web chall"
 tags: ["dreamhack", "ctf", "web", "xss"]
 ---
 

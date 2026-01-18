@@ -1,7 +1,7 @@
 ---
 title: "themeviewer writeup"
 date: 2025-12-12
-description: "dreamhack level 6 web chall"
+summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "web", "prototype pollution"]
 ---
 

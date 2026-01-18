@@ -1,7 +1,7 @@
 ---
 title: "XSS Filtering Bypass Reborn writeup"
 date: 2025-10-21
-description: "dreamhack level 5 web chall"
+summary: "dreamhack level 5 web chall"
 tags: ["dreamhack", "ctf", "web", "xss"]
 ---
 
