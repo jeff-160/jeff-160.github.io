@@ -1,5 +1,5 @@
 ---
-title: "hide in template writeup"
+title: "hide in template"
 date: 2026-01-18
 summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "class pollution"]

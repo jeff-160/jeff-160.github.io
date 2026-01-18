@@ -1,5 +1,5 @@
 ---
-title: "Python Web writeup"
+title: "Python Web"
 date: 2025-11-26
 summary: "dreamhack level 4 web chall"
 tags: ["dreamhack", "ctf", "web", "rce"]

@@ -1,5 +1,5 @@
 ---
-title: "bisc_jail writeup"
+title: "bisc_jail"
 date: 2025-10-14
 summary: "dreamhack level 6 pyjail"
 tags: ["dreamhack", "ctf", "pyjail"]

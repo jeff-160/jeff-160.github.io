@@ -1,5 +1,5 @@
 ---
-title: "AnywhereDoor writeup"
+title: "AnywhereDoor"
 date: 2025-11-08
 summary: "dreamhack level 4 web chall"
 tags: ["dreamhack", "ctf", "web", "xss"]

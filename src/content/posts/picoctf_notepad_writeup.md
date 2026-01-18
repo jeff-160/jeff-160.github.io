@@ -1,5 +1,5 @@
 ---
-title: "notepad writeup"
+title: "notepad"
 date: 2025-11-17
 summary: "picoCTF hard web chall"
 tags: ["picoctf", "ctf", "web", "path traversal", "ssti"]

@@ -1,5 +1,5 @@
 ---
-title: "Cat Cute! writeup"
+title: "Cat Cute!"
 date: 2025-12-11
 summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "web", "xss", "rce"]

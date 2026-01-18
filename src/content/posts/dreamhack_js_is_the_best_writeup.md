@@ -1,5 +1,5 @@
 ---
-title: "JS is the best writeup"
+title: "JS is the best"
 date: 2025-10-15
 summary: "dreamhack level 5 web chall"
 tags: ["dreamhack", "ctf", "web", "js jail"]

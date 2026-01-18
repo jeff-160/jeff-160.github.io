@@ -1,5 +1,5 @@
 ---
-title: "basic injection v2 writeup"
+title: "basic injection v2"
 date: 2025-12-15
 summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "web", "ejs", "rce"]

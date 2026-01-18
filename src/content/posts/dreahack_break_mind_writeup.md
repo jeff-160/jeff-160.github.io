@@ -1,5 +1,5 @@
 ---
-title: "Break Mind writeup"
+title: "Break Mind"
 date: 2025-10-29
 summary: "dreamhack level 3 pyjail"
 tags: ["dreamhack", "ctf", "pyjail"]
