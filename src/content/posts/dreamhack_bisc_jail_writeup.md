@@ -27,7 +27,7 @@ The `exec()` call and the inclusion of `@` in the charset clearly points towards
 @(lambda _: 'os')
 def f():0
 
-@f1
+@f
 @(lambda _: 'sh')
 def g():0
 ```
