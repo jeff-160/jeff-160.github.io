@@ -1,4 +1,9 @@
-## pr0t0typ3 p011ut10n  
+---
+title: "pr0t0typ3 p011ut10n"
+date: 2025-02-06
+summary: "dreamhack level 6 web chall"
+tags: ["dreamhack", "ctf", "web", "mysqljs", "prototype pollution", "ejs"]
+---
 
 <img src="/blog/dreamhack_pr0t0typ3_p011ut10n_writeup/images/chall.png" width=600>
 
