@@ -1,6 +1,6 @@
 ---
 title: "pr0t0typ3 p011ut10n"
-date: 2025-02-06
+date: 2026-02-06
 summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "web", "mysqljs", "prototype pollution", "ejs"]
 ---
