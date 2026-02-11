@@ -5,7 +5,7 @@ summary: "247ctf hard web chall"
 tags: ["247ctf", "ctf", "web", "type juggling", "unserialize", "sqli", "webshell"]
 ---
 
-<img src="/blog/247ctf_cereal_logger_writeup/images/chall.png" width=600>
+<img src="/blog/247ctf_cereal_logger_writeup/images/chall.png" width=800>
 
 ### Vulnerability Analysis  
 
