@@ -5,7 +5,7 @@ summary: "247ctf hard web chall"
 tags: ["247ctf", "ctf", "web", "xxe", "phar deserialization", "rce"]
 ---
 
-<img src="/blog/247ctf_meme_upload_service_writeup/images/chall.png" width=800>
+<img src="/blog/247ctf_meme_upload_service_writeup/images/chall.png" width=900>
 
 ### Vulnerability Analysis
 
