@@ -28,7 +28,7 @@ EXPOSE 80
 CMD [ "node", "main.js" ]
 ```
 
-<img src="/blog/dreamhack_nss_writeup/images/flag_file.png" width=600>
+<img src="/blog/dreamhack_nss_writeup/images/flag_file.png" width=800>
 
 In the note reading endpoint, we just need to get `path.join(user.base_dir, f_path)` to evaluate to `/usr/src/app/flag`, and we win.  
 
