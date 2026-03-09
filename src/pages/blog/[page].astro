@@ -1,0 +1,79 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import PostList from '@/components/post/PostList.astro';
+import SectionBlock from '@/components/SectionBlock.astro';
+import { getSortedPosts } from '@/utils/content';
+
+// -----------------------------
+// getStaticPaths required by Astro
+// -----------------------------
+export async function getStaticPaths() {
+  const POSTS_PER_PAGE = 10; // defined inside function
+  const posts = await getSortedPosts();
+  const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+
+  const pages = Array.from({ length: totalPages }, (_, i) => ({
+    params: { page: String(i + 1) },
+  }));
+  return pages;
+}
+
+const POSTS_PER_PAGE = 10;
+const posts = await getSortedPosts();
+const page = Number(Astro.params.page) || 1;
+const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+
+// Slice posts for this page
+const start = (page - 1) * POSTS_PER_PAGE;
+const end = start + POSTS_PER_PAGE;
+const pagePosts = posts.slice(start, end);
+---
+
+<PageLayout title={`Blog - Page ${page}`}>
+  <div class="mx-auto max-w-[800px] px-4 py-20">
+    <div class="min-w-0">
+      <SectionBlock title="">
+        <PostList posts={pagePosts} />
+      </SectionBlock>
+
+      <div class="flex w-full max-w-[800px] mx-auto mt-8">
+        {page > 1 && (
+          <a
+            href={`/blog/${page - 1}`}
+            class="group relative text-accent flex items-center gap-2"
+            >
+            <svg width="36" height="12" viewBox="0 0 36 12" fill="none" class="stroke-current">
+                <path d="M35.25 6H24.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M30 0.75L24.75 6L30 11.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M21 10L16.5 5.5L21 1" stroke-opacity="0.66" stroke-linecap="round" stroke-linejoin="round"
+                class="delay-200 opacity-0 group-hover:opacity-100"></path>
+                <path d="M8 10L3.5 5.5L8 1" stroke-opacity="0.35" stroke-linecap="round" stroke-linejoin="round"
+                class="delay-300 opacity-0 group-hover:opacity-100"></path>
+            </svg>
+            <span>Previous</span>
+          </a>
+        )}
+
+        <!-- Next Button -->
+        {page < totalPages && (
+          <a
+            href={`/blog/${page + 1}`}
+            class="group relative text-accent flex items-center gap-2 ml-auto"
+            >
+            <span>Next</span>
+            <svg width="36" height="12" viewBox="0 0 36 12" fill="none" class="stroke-current">
+                <path d="M0.75 6H11.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6 0.75L11.25 6L6 11.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15 10L19.5 5.5L15 1" stroke-opacity="0.66" stroke-linecap="round" stroke-linejoin="round"
+                class="delay-200 opacity-0 group-hover:opacity-100"></path>
+                <path d="M23 10L27.5 5.5L23 1" stroke-opacity="0.35" stroke-linecap="round" stroke-linejoin="round"
+                class="delay-300 opacity-0 group-hover:opacity-100"></path>
+                <path d="M31 10L35.5 5.5L31 1" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"
+                class="delay-400 opacity-0 group-hover:opacity-100"></path>
+            </svg>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</PageLayout>
