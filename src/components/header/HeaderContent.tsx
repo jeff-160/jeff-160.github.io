@@ -93,7 +93,7 @@ function HeaderMenu({ isBgShow }: { isBgShow: boolean }) {
             isActive={
               menu.link === "/"
                 ? pathName === "/"
-                : pathName === menu.link || pathName.startsWith(menu.link + "/")
+                : pathName.startsWith('/' + menu.link.split("/")[1])
             }
           />
         ))}
