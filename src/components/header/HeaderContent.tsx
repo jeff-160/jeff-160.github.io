@@ -90,7 +90,11 @@ function HeaderMenu({ isBgShow }: { isBgShow: boolean }) {
             href={menu.link}
             title={menu.name}
             icon={menu.icon}
-            isActive={pathName === menu.link}
+            isActive={
+              menu.link === "/"
+                ? pathName === "/"
+                : pathName === menu.link || pathName.startsWith(menu.link + "/")
+            }
           />
         ))}
       </div>
