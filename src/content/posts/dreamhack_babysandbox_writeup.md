@@ -1,6 +1,6 @@
 ---
 title: "babysandbox"
-date: 2026-11-03
+date: 2026-03-11
 summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "web", "hpp", "ssti"]
 ---

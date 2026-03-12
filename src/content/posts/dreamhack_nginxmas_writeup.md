@@ -1,6 +1,6 @@
 ---
 title: "NginX-mas"
-date: 2026-10-03
+date: 2026-03-10
 summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "web"]
 ---
