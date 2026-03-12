@@ -1,4 +1,9 @@
-## 2023 Web Chal
+---
+title: "2023 Web Chal"
+date: 2026-03-12
+summary: "dreamhack level 6 web chall"
+tags: ["dreamhack", "ctf", "web", "node.js", "cve"]
+---
 
 <img src="/blog/dreamhack_2023_web_chal_writeup/images/chall.png" width=600>
 
