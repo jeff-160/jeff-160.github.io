@@ -1,15 +1,15 @@
 ---
 title: "Fast XSS"
-date: 2025-03-13
-summary: "dreamhack level 6 pyjail"
+date: 2026-03-13
+summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "xss", "crlf injection"]
 ---
 
-<img src="images/chall.png" width=600>
+<img src="/blog/dreamhack_fast_xss_writeup/images/chall.png" width=600>
 
 The challenge setup consists of a Node.js server on port `1337` and a FastAPI server on port `8000`.  
 
-<img src="images/ports.png" width=600>
+<img src="/blog/dreamhack_fast_xss_writeup/images/ports.png" width=600>
 
 The Node.js server has an `/api/report` endpoint that gets an admin bot with the flag cookie to visit the FastAPI server.  
 
@@ -130,7 +130,7 @@ payload = quote(json.dumps(payload))
 print(payload)
 ```
 
-<img src="images/xss.png" width=600>
+<img src="/blog/dreamhack_fast_xss_writeup/images/xss.png" width=600>
 
 Now that we have a way of gaining XSS on the server, we just need to make a `POST` request to `/api/report` with an XSS payload that exfiltrates the flag cookie to our webhook.  
 
