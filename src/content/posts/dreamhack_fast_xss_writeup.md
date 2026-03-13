@@ -9,7 +9,7 @@ tags: ["dreamhack", "ctf", "xss", "crlf injection"]
 
 The challenge setup consists of a Node.js server on port `1337` and a FastAPI server on port `8000`.  
 
-<img src="/blog/dreamhack_fast_xss_writeup/images/ports.png" width=600>
+<img src="/blog/dreamhack_fast_xss_writeup/images/ports.png" width=800>
 
 The Node.js server has an `/api/report` endpoint that gets an admin bot with the flag cookie to visit the FastAPI server.  
 
@@ -130,7 +130,7 @@ payload = quote(json.dumps(payload))
 print(payload)
 ```
 
-<img src="/blog/dreamhack_fast_xss_writeup/images/xss.png" width=600>
+<img src="/blog/dreamhack_fast_xss_writeup/images/xss.png" width=800>
 
 Now that we have a way of gaining XSS on the server, we just need to make a `POST` request to `/api/report` with an XSS payload that exfiltrates the flag cookie to our webhook.  
 
