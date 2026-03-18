@@ -11,7 +11,7 @@ This challenge involves a webpage where we can play the Chrome dinosaur game.
 
 We are required to farm `9999` points to get the website to generate a token, which can be used to claim the flag.  
 
-<img src="/blog/lnc_2026_dino_rush_writeup/images/chall.png" width=600>
+<img src="/blog/lnc_2026_dino_rush_writeup/images/webpage.png" width=600>
 
 Inside the HTML source, we can find the `submitToken()` function, which makes a request to `/api/submit` with the specially crafted token to retrieve the flag.  
 
@@ -36,7 +36,7 @@ async function submitToken() {
 
 We can also find a reference to `game.js` which contains the source code for the main game logic.  
 
-<img src="/blog/lnc_2026_dino_rush_writeup/images/chall.png" width=600>
+<img src="/blog/lnc_2026_dino_rush_writeup/images/game.png" width=600>
 
 Inside, we can find the exact function being used to generate the token. `buildScoreToken()` crafts a token using the score, timestamp and signature.  
 
