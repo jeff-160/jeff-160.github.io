@@ -1,6 +1,6 @@
 ---
 title: "Secret Document Storage : REVENGE"
-date: 2026-03-12
+date: 2026-03-26
 summary: "dreamhack level 7 web chall"
 tags: ["dreamhack", "ctf", "web", "mysql", "phar deserialization", "ssrf", "privilege escalation"]
 ---
