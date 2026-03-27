@@ -114,7 +114,7 @@
 <p><a href="https://hacktricks.wiki/en/pentesting-web/proxy-waf-protections-bypass.html" rel="noopener noreferrer" target="_blank">This article</a><i class="iconfont icon-external-link"></i> explains that <code>nginx/1.22.x</code> proxy filters can actually be bypassed using special characters.</p>
 <p>These characters are stripped by Flask but preserved by Nginx, causing a mismatch between the path resolution and allowing us to bypass the filter.</p>
 <img src="/blog/dreamhack_richer_than_db_writeup/images/bypass.png" width="800">
-<p>Appending <code>\xA0</code> at the end of the path will finally allow us to interact with the `/admin endpoint.</p>
+<p>Appending <code>\xA0</code> at the end of the path will finally allow us to interact with the <code>/admin</code> endpoint.</p>
 <img src="/blog/dreamhack_richer_than_db_writeup/images/admin.png" width="800">
 <p>Now that we are able to send commands to <code>/admin</code>, we need to find a way to modify <code>users</code> to affect the handling of <code>BIGINT</code>.</p>
 <p>Although our inputs are directly interpolated into the query, the charset enforced only allows alphanumeric characters and <code>_=</code>, which effectively kills SQLi in <code>new_table_name</code>.</p>
