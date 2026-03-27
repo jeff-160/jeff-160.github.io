@@ -142,7 +142,7 @@ These characters are stripped by Flask but preserved by Nginx, causing a mismatc
 
 <img src="/blog/dreamhack_richer_than_db_writeup/images/bypass.png" width=800>
 
-Appedning `\xA0` at the end of the path will finally allow us to interact with the `/admin endpoint.  
+Appending `\xA0` at the end of the path will finally allow us to interact with the `/admin endpoint.  
 
 <img src="/blog/dreamhack_richer_than_db_writeup/images/admin.png" width=800>
 
