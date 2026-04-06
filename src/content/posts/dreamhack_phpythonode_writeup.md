@@ -130,6 +130,10 @@ app.get('/show_logs', function(req, res) {
 
 We can bypass the filter by passing `log_query` as an array, and the `.split()` call will throw an exception and skip the `try` block, allowing us to run arbitrary Redis commands.  
 
+```
+/show_logs?log_query[0]=SET&log_query[1][]=hacked%201337
+```
+
 Redis normally stores data in memory, but it can persist to disk using the `SAVE` command. Furthermore, Redis also allows us to modify the save directory and filename using `CONFIG SET`.  
 
 We can set the output file to `/tmp/shell.php`, then write our PHP RCE payload to it.  
