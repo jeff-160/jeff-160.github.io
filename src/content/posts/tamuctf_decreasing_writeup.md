@@ -54,7 +54,7 @@ To fix this, we can get creative and build these numbers using comparisons and b
 
 At this point, all the identifiers are in descending length order, except for `os`.  
 
-`__import__` is `10` characters long and ``system` is `6` characters long, so we just need to find a way to pad `os` to `7` characters.  
+`__import__` is `10` characters long and `system` is `6` characters long, so we just need to find a way to pad `os` to `7` characters.  
 
 To do this, we can pad the `os` string, then use string slicing to extract the first `2` characters using the bitshift technique from earlier.  
 
