@@ -5,8 +5,10 @@ summary: "dreamhack level 6 web chall"
 tags: ["dreamhack", "ctf", "xss", "relative path overwrite", "dom clobbering"]
 ---
 
-<img src="/blog/dreamhack_guest_book_v0.2_writeup/images/chall.png" width=600>
+<img src="/blog/dreamhack_guest_book_v0.2_writeup/images/chall.png" width=600>  
 
+This challenge involves a typical XSS setup  
+  
 `/GuestBook.php` allows us to render arbitrary content, while `/Report.php` gets the server to visit our payload on `/GuestBook.php` with an admin bot.  
 
 <img src="/blog/dreamhack_guest_book_v0.2_writeup/images/webpage.png" width=800>
