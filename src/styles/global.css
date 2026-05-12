@@ -35,9 +35,9 @@ html {
   scroll-padding-top: 64px;
 }
 
-html.gray {
+/* html.gray {
   filter: grayscale(1);
-}
+} */
 
 * {
   scrollbar-width: thin;
