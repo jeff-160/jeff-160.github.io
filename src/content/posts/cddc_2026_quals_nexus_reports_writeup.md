@@ -132,7 +132,7 @@ Through some testing, I realised that the filter was only triggered if attribute
 
 ```
 onload              // not blacklisted
-<style onload="">   // blacklist
+<style onload="">   // blacklisted
 ```
 
 I was able to use the payload below to trick the DOM parser into treating my main payload as a HTML comment, which bypassed the filter.  
