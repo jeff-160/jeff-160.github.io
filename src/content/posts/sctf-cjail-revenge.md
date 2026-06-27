@@ -1,13 +1,13 @@
 ---
 title: "sctf/cjail revenge"
 date: 2026-06-27
-summary: "misc chall i wrote for sctf 7.0"
+summary: "misc chall i wrote for sctf "
 tags: ["dreamhack", "ctf", "misc"]
 ---
 
 ## Introduction  
 
-During chall setting for SCTF 7.0, the misc category had a few empty slots, so I figured I'd set a few challs.  
+During chall setting for SCTF , the misc category had a few empty slots, so I figured I'd set a few challs.  
 
 A few people might know me as a Pyjail main, but the concept has been overdone in a lot of CTFs I've played, so I figured I'd switch things up this year.  
 
@@ -17,7 +17,7 @@ For those confused about the challenge name, we lowkey forgot to add the origina
 
 ## The Challenge   
 
-<img src="/blog/sctf7.0-cjail-revenge/images/cjail-revenge.png" width=600>
+<img src="/blog/sctf-cjail-revenge/images/cjail-revenge.png" width=600>
 
 This chall involves a program that allows us to enter a single line of C code, which will be run through a series of validations, before being compiled and executed.  
 
@@ -154,7 +154,7 @@ If we do a bit of digging, we will find that `C11` supports trigraphs as part of
 
 Most importantly, there are corresponding trigraphs for `#{}`.  
 
-<img src="/blog/sctf7.0-cjail-revenge/images/trigraphs.png" width=800>
+<img src="/blog/sctf-cjail-revenge/images/trigraphs.png" width=800>
 
 Rewriting our payload with trigraphs gives us a `139` character payload, which fits under the `200` length limit nicely.  
 
@@ -213,6 +213,6 @@ io.sendlineafter(b'>', obf(payload).replace('\n', '\r').encode())
 io.interactive()
 ```
 
-<img src="/blog/sctf7.0-cjail-revenge/images/flag.png" width=800>
+<img src="/blog/sctf-cjail-revenge/images/flag.png" width=800>
 
 Flag: `sctf{cj4i15_4r3_4_5ubsEt_0f_pwN}`
