@@ -2,7 +2,7 @@
 title: "sctf/cjail revenge"
 date: 2026-06-27
 summary: "misc chall i wrote for sctf 7.0"
-tags: ["dreamhack", "ctf", "misc"]
+tags: ["sctf", "ctf", "misc"]
 ---
 
 ## Introduction  
