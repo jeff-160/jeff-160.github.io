@@ -1,13 +1,13 @@
 ---
 title: "sctf/cjail revenge"
 date: 2026-06-27
-summary: "misc chall i wrote for sctf "
+summary: "misc chall i wrote for sctf 7.0"
 tags: ["dreamhack", "ctf", "misc"]
 ---
 
 ## Introduction  
 
-During chall setting for SCTF , the misc category had a few empty slots, so I figured I'd set a few challs.  
+During chall setting for SCTF, the misc category had a few empty slots, so I figured I'd set a few challs.  
 
 A few people might know me as a Pyjail main, but the concept has been overdone in a lot of CTFs I've played, so I wanted to switch things up this year.  
 
