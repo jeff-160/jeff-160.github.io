@@ -11,9 +11,9 @@ During chall setting for SCTF , the misc category had a few empty slots, so I fi
 
 A few people might know me as a Pyjail main, but the concept has been overdone in a lot of CTFs I've played, so I wanted to switch things up this year.  
 
-I came across [this challenge](https://dreamhack.io/wargame/challenges/2600) on Dreamhack, which served as the main inspiration for the cjail challs.  
+I came across [this challenge](https://dreamhack.io/wargame/challenges/2600) on Dreamhack, which served as the main inspiration for this chall.  
 
-For those confused about the challenge name, we lowkey forgot to add the original `cjail` challenge in quals :P  
+For contestants who are confused about the challenge name, we lowkey forgot to add the original `cjail` challenge in quals.  
 
 ## The Challenge   
 
