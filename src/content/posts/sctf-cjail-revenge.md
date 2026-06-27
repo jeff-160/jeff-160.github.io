@@ -9,7 +9,7 @@ tags: ["dreamhack", "ctf", "misc"]
 
 During chall setting for SCTF , the misc category had a few empty slots, so I figured I'd set a few challs.  
 
-A few people might know me as a Pyjail main, but the concept has been overdone in a lot of CTFs I've played, so I figured I'd switch things up this year.  
+A few people might know me as a Pyjail main, but the concept has been overdone in a lot of CTFs I've played, so I wanted to switch things up this year.  
 
 I came across [this challenge](https://dreamhack.io/wargame/challenges/2600) on Dreamhack, which served as the main inspiration for the cjail challs.  
 
