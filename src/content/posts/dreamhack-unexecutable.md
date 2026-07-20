@@ -235,7 +235,7 @@ Then, we can just Base64-encode the entire XSLT payload and include it in an XML
 
 Uploading our malicious XML payload and reporting it will finally exfiltrate the flag to our webhook.  
 
-<img src="/blog/dreamhack-unexecutable/images/flag.png" width=600>
+<img src="/blog/dreamhack-unexecutable/images/flag.png" width=800>
 
 Below is my full solve script for this chall.  
 
