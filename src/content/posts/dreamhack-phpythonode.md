@@ -98,7 +98,7 @@ Now, we need a way to get arbitrary file write to be able to escalate to RCE.
 
 The Node.js service connects to a Redis background service. The `/show_logs` endpoint attempts to restrict us to the `GET` command only, but can be easily bypassed.  
 
-This is the exact same setup as the [node_api challenge](https://jeff-160.github.io/posts/dreamhack_node_api_writeup/), thus it would be logical to assume that the server uses `express@4.x`, which uses the `qs` library by default to parse URLs.  
+This is the exact same setup as the [node_api challenge](https://github.com/jeff-160/CTF-writeups/tree/main/Dreamhack/node_api), thus it would be logical to assume that the server uses `express@4.x`, which uses the `qs` library by default to parse URLs.  
 
 ```js
 app.get('/show_logs', function(req, res) {
