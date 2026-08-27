@@ -1,4 +1,9 @@
-## catstagram  
+---
+title: "catstagram"
+date: 2026-08-27
+summary: "dreamhack platinum 4 web chall"
+tags: ["dreamhack", "ctf", "web", "path traversal", "lfi", "rce", "werkzeug"]
+--- 
 
 <img src="/blog/dreamhack-catstagram/images/chall.png" width=600>
 
