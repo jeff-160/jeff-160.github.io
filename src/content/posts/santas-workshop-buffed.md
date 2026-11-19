@@ -1,6 +1,6 @@
 ---
 title: "Santa's workshop Buffed"
-date: 2026-11-19
+date: 2026-10-19
 summary: "dreamhack platinum 1 web chall"
 tags: ["dreamhack", "ctf", "web", "json injection", "nosqli", "toctou"]
 ---
