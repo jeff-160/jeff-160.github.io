@@ -2,7 +2,7 @@
 title: "Santa's workshop Buffed"
 date: 2026-11-19
 summary: "dreamhack platinum 1 web chall"
-tags: ["dreamhack", "ctf", "web", "json injection", "nosql injection", "toctou"]
+tags: ["dreamhack", "ctf", "web", "json injection", "nosqli", "toctou"]
 ---
 
 <img src="/blog/santas-workshop-buffed/images/chall.png" width=600>
